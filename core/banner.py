@@ -1,5 +1,5 @@
 
-from  core.colors import yellow,green,red
+from  core.colors import yellow,green
 from core import VERSION
 from core.cmdline import args
 from core.log import logger
