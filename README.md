@@ -22,7 +22,7 @@ python3 Bird.py -h
 python3 Bird.py -f url.txt --output http.txt -t 30 #使用output参数输出到文件 -t 指定线程数目
 ```
 ### 特征搜索
-这里识别了搜索了Spring Boot的报错页面
+这里搜索Spring Boot的报错页面
 ```
 python3 Bird.py -f url.txt --output http.txt -t 30 --search "Whitelabel" 
 ```
@@ -31,4 +31,4 @@ python3 Bird.py -f url.txt --output http.txt -t 30 --search "Whitelabel"
 ## TODO
 - [x] CMS指纹识别
 ## 贡献&感谢
-- [CONTRIBUTORS](CONTRIBUTORS.md)
+- Ethan
