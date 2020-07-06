@@ -31,4 +31,4 @@ python3 Bird.py -f url.txt --output http.txt -t 30 --search "Whitelabel"
 ## TODO
 - [x] CMS指纹识别
 ## 贡献&感谢
-- Ethan
+- @Ethan
