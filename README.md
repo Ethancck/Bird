@@ -14,7 +14,6 @@ Bird是一款用于HTTP探测的工具，支持多线程，特征搜索，可用
 git clone https://github.com/Ethancck/Bird.git
 cd Bird # 进入git目录
 pip3 install -r requirements.txt
-cd Bird # 进入源码目录
 python3 Bird.py -h
 ```
 ### HTTP探测
