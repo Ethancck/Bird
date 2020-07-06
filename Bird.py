@@ -1,6 +1,5 @@
 import os
 import concurrent.futures
-
 from core.log import logger
 import requests
 import sys
