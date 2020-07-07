@@ -17,6 +17,8 @@ def check(url):
             status = resp.status_code
             resp.encoding = 'utf-8'
             title = Document(resp.content).title()
+            lan=resp.headers.get("X-Powered-By")
+            server=resp.headers.get("Server")
             if title=='[no-title]':
                 if len(resp.content)>60:
                     if "Whitelabel" in resp.text:
@@ -25,7 +27,7 @@ def check(url):
                         title='[no-title]'
                 else:
                     title=resp.content.decode('utf-8')
-            if flag in resp.text or flag in title:
+            if flag in resp.text or flag in title or flag in lan or flag in server:
                 logger.INFO("url:{0}   title:{1} code: {2}".format(url, title, status))
                 if args.report:
                     with open(args.report, "a+", encoding="utf-8") as r:
